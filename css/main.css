@@ -1,0 +1,205 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.background-gradient{
+    padding: 0px;
+    margin: 0px;
+    background: linear-gradient(to right top, #000000, #0b0b0b, #131313, #191919, #1f1f1f);
+    height: 100%;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.7);
+    opacity: 0.6;
+    padding: 0.1px;
+}
+
+header h2{
+    margin-top: 26px;
+    font-size: 20px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+#text a{
+    font-size: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#text b{
+    font-size: 14px;
+    margin-top: 2px;
+    color:#6310ea;
+}
+
+#text span{
+    margin-top: 20px;
+    font-style: italic;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+
+
+
+
+#input-principal{
+    border:#6310ea 2px solid;
+    border-radius: 4px;
+    height: 50px;
+    background-color: black;
+    opacity: 0.7;
+    color: white;
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 4px;
+    width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+/* Animação Background*/
+
+body {
+	background: linear-gradient(to right top, #000000, #0b0b0b, #131313, #191919, #1f1f1f);
+	margin: 0rem;
+	min-height: 100vh;
+}
+#canvas, #text {
+	position: absolute;
+	display: block;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+#text {
+    min-height: 100vh;
+    width: 100%;
+    z-index: 1;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 8vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+/* Animação Botão */
+
+button, button::after {
+    font-weight: bold;
+    width: 300px;
+    height: 46px;
+    font-size: 18px;
+    background: linear-gradient(to left, #6310ea, #520fc0, #410e98, #310b72, #22084e);
+    border: 0;
+    color: #fff;
+    letter-spacing: 2px;
+    box-shadow: 6px 0px 0px #00E6F6;
+    outline: transparent;
+    position: relative;
+}
+
+button::after {
+    --slice-0: inset(50% 50% 50% 50%);
+    --slice-1: inset(80% -6px 0 0);
+    --slice-2: inset(50% -6px 30% 0);
+    --slice-3: inset(10% -6px 85% 0);
+    --slice-4: inset(40% -6px 43% 0);
+    --slice-5: inset(80% -6px 5% 0);
+  
+  content: 'Enviar Denuncia';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #6310EA;
+  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+  clip-path: var(--slice-0);
+}
+
+button:hover::after {
+  animation: 1s glitch;
+  animation-timing-function: steps(2, end);
+}
+
+@keyframes glitch {
+  0% {
+    clip-path: var(--slice-1);
+    transform: translate(-20px, -10px);
+  }
+  10% {
+    clip-path: var(--slice-3);
+    transform: translate(10px, 10px);
+  }
+  20% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 10px);
+  }
+  30% {
+    clip-path: var(--slice-3);
+    transform: translate(0px, 5px);
+  }
+  40% {
+    clip-path: var(--slice-2);
+    transform: translate(-5px, 0px);
+  }
+  50% {
+    clip-path: var(--slice-3);
+    transform: translate(5px, 0px);
+  }
+  60% {
+    clip-path: var(--slice-4);
+    transform: translate(5px, 10px);
+  }
+  70% {
+    clip-path: var(--slice-2);
+    transform: translate(-10px, 10px);
+  }
+  80% {
+    clip-path: var(--slice-5);
+    transform: translate(20px, -10px);
+  }
+  90% {
+    clip-path: var(--slice-1);
+    transform: translate(-10px, 0px);
+  }
+  100% {
+    clip-path: var(--slice-1);
+    transform: translate(0);
+  }
+}
+
+
+
+	

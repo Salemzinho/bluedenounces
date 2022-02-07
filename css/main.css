@@ -2,71 +2,104 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
-.background-gradient{
-    padding: 0px;
-    margin: 0px;
-    background: linear-gradient(to right top, #000000, #0b0b0b, #131313, #191919, #1f1f1f);
-    height: 100%;
+
+
+
+
+/* Navbar */
+
+#logo-blue{
+    color:#00a2e3;
+    font-weight: 600;
 }
 
-header{
-    width: 100%;
-    height: 80px;
-    background: rgba(0, 0, 0, 0.7);
-    opacity: 0.6;
-    padding: 0.1px;
+#logo{}
+
+#apoie-os-criadores{
+    background-color: #00a2e3;
+    border: #00a2e3;
+
+    -webkit-transition: .3s
 }
 
-header h2{
-    margin-top: 26px;
-    font-size: 20px;
+#apoie-os-criadores:hover{
+    border: #00a2e3 solid 1px;
+    color: #00a2e3;
+    background-color: transparent;
+    transition: .3s
+}
+
+#a-sobre-nos{
     color: white;
-}
-
-
-
-
-
-
-
-
-
-#text a{
-    font-size: 20px;
-    margin-right: 20px;
     text-decoration: none;
+
+    -webkit-transition: .3s
+}
+
+#a-sobre-nos:hover{
+    color: #00a2e3;
+    transition: .3s
+}
+
+
+
+
+/* Conteudo Home */
+
+b{
+    color:#00a2e3;
+    font-size: 16px;
+
+    -webkit-transition: .3s
+}
+
+b:hover{
+    color: white;
+    transition: .3s;
+}
+
+b i{
+    margin-right: 10px;
+}
+
+i{
     color: white;
 }
 
-#text b{
-    font-size: 14px;
-    margin-top: 2px;
-    color:#6310ea;
-}
-
-#text span{
+span{
+    margin-bottom: 30px;
     margin-top: 20px;
     font-style: italic;
-    font-size: 14px;
-    margin-bottom: 30px;
+    font-size: 16px;
+    color: white;
 }
 
-
-
-
+.github-apoie{
+    margin-top: 50px;
+}
 
 #input-principal{
-    border:#6310ea 2px solid;
-    border-radius: 4px;
+    margin-bottom: 4px;
+    margin-top: 40px;
     height: 50px;
-    background-color: black;
-    opacity: 0.7;
+    background: rgba(0, 0, 0, 0.4);
+    border:#00a2e3 2px solid;
+    border-radius: 4px;
     color: white;
     font-size: 16px;
-    margin-top: 40px;
-    margin-bottom: 4px;
-    width: 50%;
 }
+
+#input-motivo{
+    border:#00a2e3 2px solid;
+    border-radius: 4px;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+
 
 
 
@@ -84,7 +117,8 @@ body {
 	margin: 0rem;
 	min-height: 100vh;
 }
-#canvas, #text {
+
+#canvas{
 	position: absolute;
 	display: block;
 	top: 0;
@@ -92,18 +126,10 @@ body {
 	z-index: -1;
 }
 
-#text {
-    min-height: 100vh;
-    width: 100%;
-    z-index: 1;
-    color: #fff;
-    text-transform: uppercase;
-    font-size: 8vmin;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
+
+
+
+
 
 
 
@@ -114,21 +140,31 @@ body {
 
 /* Animação Botão */
 
-button, button::after {
+#button-denuncia, #button-denuncia::after {
+    margin-top: 20px;
     font-weight: bold;
     width: 300px;
     height: 46px;
     font-size: 18px;
-    background: linear-gradient(to left, #6310ea, #520fc0, #410e98, #310b72, #22084e);
+    background-image: linear-gradient(to right top, #004c6b, #006087, #0076a5, #008cc3, #00a2e3);
     border: 0;
     color: #fff;
     letter-spacing: 2px;
     box-shadow: 6px 0px 0px #00E6F6;
     outline: transparent;
     position: relative;
+
+    /* Hover Out */
+    -webkit-transition: .6s;
 }
 
-button::after {
+#button-denuncia:hover{
+    transition: .6s;
+    width: 450px;
+    height: 42px;
+}
+
+#button-denuncia::after {
     --slice-0: inset(50% 50% 50% 50%);
     --slice-1: inset(80% -6px 0 0);
     --slice-2: inset(50% -6px 30% 0);
@@ -136,70 +172,138 @@ button::after {
     --slice-4: inset(40% -6px 43% 0);
     --slice-5: inset(80% -6px 5% 0);
   
-  content: 'Enviar Denuncia';
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #6310EA;
-  text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
-  clip-path: var(--slice-0);
+    content: 'Enviar Denuncia';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #00a2e3;
+    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
+    clip-path: var(--slice-0);
 }
 
-button:hover::after {
-  animation: 1s glitch;
-  animation-timing-function: steps(2, end);
+#button-denuncian:hover::after {
+    animation: 1s glitch;
+    animation-timing-function: steps(2, end);
 }
-
-@keyframes glitch {
-  0% {
-    clip-path: var(--slice-1);
-    transform: translate(-20px, -10px);
-  }
-  10% {
-    clip-path: var(--slice-3);
-    transform: translate(10px, 10px);
-  }
-  20% {
-    clip-path: var(--slice-1);
-    transform: translate(-10px, 10px);
-  }
-  30% {
-    clip-path: var(--slice-3);
-    transform: translate(0px, 5px);
-  }
-  40% {
-    clip-path: var(--slice-2);
-    transform: translate(-5px, 0px);
-  }
-  50% {
-    clip-path: var(--slice-3);
-    transform: translate(5px, 0px);
-  }
-  60% {
-    clip-path: var(--slice-4);
-    transform: translate(5px, 10px);
-  }
-  70% {
-    clip-path: var(--slice-2);
-    transform: translate(-10px, 10px);
-  }
-  80% {
-    clip-path: var(--slice-5);
-    transform: translate(20px, -10px);
-  }
-  90% {
-    clip-path: var(--slice-1);
-    transform: translate(-10px, 0px);
-  }
-  100% {
-    clip-path: var(--slice-1);
-    transform: translate(0);
-  }
-}
-
 
 
 	
+
+
+
+
+
+
+/* Astronauta */
+
+.astronaut img{
+  width:100px;
+  position:absolute;
+  top:55%;
+  animation:astronautFly 6s infinite linear;
+}
+
+@keyframes astronautFly{
+  0%{
+    left:-100px;
+  }
+  25%{
+    top:50%;
+    transform:rotate(30deg);
+  }
+  50%{
+    transform:rotate(45deg);
+    top:55%;
+  }
+  75%{
+    top:60%;
+    transform:rotate(30deg);
+  }
+  100%{
+    left:91%;
+    transform:rotate(45deg);
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+#sobre-nos-card{
+  background-color: #00a2e3;
+  color: white;
+}
+
+#sobre-nos-card i{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#sobre-nos-card h5{
+  margin-bottom: 40px;
+}
+
+#sobre-nos-card p{
+  margin-bottom: 20px;
+}
+
+
+
+
+
+.custom-btn {
+  width: 250px;
+  height: 46px;
+  padding: 10px 25px;
+  margin-top: 20px;
+  border: 2px solid #00a2e3;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  color: #fff;
+}
+
+.custom-btn b{
+  color: #fff;
+  letter-spacing: 2px;
+}
+
+.btn-10 {
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.btn-10:after {
+  position: absolute;
+  content: " ";
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  transition: all 0.3s ease;
+  -webkit-transform: scale(.1);
+  transform: scale(.1);
+  color: #fff;
+}
+.btn-10:hover {
+  color: #fff;
+}
+.btn-10:hover:after {
+  background: #00a2e3;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}

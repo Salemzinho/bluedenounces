@@ -1,67 +1,3 @@
-<!DOCTYPE html>
-<html lang="PT-BR">
-<head>
-    <!-- HTML -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jack n' Friends</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/main.css">
-</head>
-<body>
-<canvas id="canvas"></canvas>
-
-<header>
-  <div class="container">
-    <h2>Nome Do Site</h2>
-    <nav>
-
-
-    </nav>
-  </div>
-</header>
-
-<div id="text">
-<div class="container col-14">
-    <div class="row text-center mt-5 col-14">
-      <span>"Disponibilizar e transmitir imagens contendo pornografia infantil pela rede mundial de computadores é crime previsto no art. 241-A do Estatuto da Criança e do Adolescente."</span>
-      <i class="fas fa-shield-alt" id="imagem-centro"></i>
-    <div id="input-denuncia">
-      <form>
-        <input id="input-principal" placeholder="Escreva o nome do @...">
-        <br>
-        <button id="button-denuncia">Enviar Denuncia</button>
-      </form>
-    </div>
-
-<br><br><br>
-<a href="#"><i class="fab fa-github" style="margin-right: 10px;"></i>Github</p></a>
-      <b>Apoie os criadores</b>
-</div>
-</div>
-</div>
-
-
-
-
-
-
-
-
-</body>
-<script>
 let resizeReset = function() {
 	w = canvasBody.width = window.innerWidth;
 	h = canvasBody.height = window.innerHeight;
@@ -173,5 +109,3 @@ let delay = 200, tid,
 rgb = opts.lineColor.match(/\d+/g);
 resizeReset();
 setup();
-</script>
-</html>

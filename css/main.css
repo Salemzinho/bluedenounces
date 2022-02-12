@@ -127,69 +127,6 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-/* Animação Botão */
-
-#button-denuncia, #button-denuncia::after {
-    margin-top: 20px;
-    font-weight: bold;
-    width: 300px;
-    height: 46px;
-    font-size: 18px;
-    background-image: linear-gradient(to right top, #004c6b, #006087, #0076a5, #008cc3, #00a2e3);
-    border: 0;
-    color: #fff;
-    letter-spacing: 2px;
-    box-shadow: 6px 0px 0px #00E6F6;
-    outline: transparent;
-    position: relative;
-
-    /* Hover Out */
-    -webkit-transition: .6s;
-}
-
-#button-denuncia:hover{
-    transition: .6s;
-    width: 450px;
-    height: 42px;
-}
-
-#button-denuncia::after {
-    --slice-0: inset(50% 50% 50% 50%);
-    --slice-1: inset(80% -6px 0 0);
-    --slice-2: inset(50% -6px 30% 0);
-    --slice-3: inset(10% -6px 85% 0);
-    --slice-4: inset(40% -6px 43% 0);
-    --slice-5: inset(80% -6px 5% 0);
-  
-    content: 'Enviar Denuncia';
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #00a2e3;
-    text-shadow: -3px -3px 0px #F8F005, 3px 3px 0px #00E6F6;
-    clip-path: var(--slice-0);
-}
-
-#button-denuncian:hover::after {
-    animation: 1s glitch;
-    animation-timing-function: steps(2, end);
-}
-
-
 	
 
 
@@ -282,11 +219,11 @@ body {
   letter-spacing: 2px;
 }
 
-.btn-10 {
+.btn-enviar {
   transition: all 0.3s ease;
   overflow: hidden;
 }
-.btn-10:after {
+.btn-enviar:after {
   position: absolute;
   content: " ";
   top: 0;
@@ -299,10 +236,10 @@ body {
   transform: scale(.1);
   color: #fff;
 }
-.btn-10:hover {
+.btn-enviar:hover {
   color: #fff;
 }
-.btn-10:hover:after {
+.btn-enviar:hover:after {
   background: #00a2e3;
   -webkit-transform: scale(1);
   transform: scale(1);

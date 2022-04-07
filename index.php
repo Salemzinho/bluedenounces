@@ -66,18 +66,17 @@ if (isset($_POST['submit'])) {
 </nav>
 
 <div class="container">
-  <br>
   <div class="text-center mt-5 col-12">
   <span class="mt-3">"Art. 241-A. Oferecer, trocar, disponibilizar, transmitir, distribuir, publicar ou divulgar por qualquer meio, inclusive por meio de sistema de informática ou telemático, fotografia, vídeo ou outro registro que contenha cena de sexo explícito ou pornográfica envolvendo criança ou adolescente: (Incluído pela Lei nº 11.829, de 2008)"</span>
     <br><br>
-    <i class="fas fa-shield-alt fa-3x" id="imagem-centro"></i>
+  <i class="fas fa-shield-alt fa-3x" id="imagem-centro"></i>
     <div id="input-denuncia">
       <form method="POST" name="formContato" action="envio.php">
         <input type="hidden" id="meuValor" name="nameValor" />
         <input class="col-sm-7 col-md-7 col-lg-7 col-12" type="text" name="input-denuncia" id="input-principal" placeholder="Digite o @..." required><br>
         <textarea class="col-sm-7 col-md-7 col-lg-7 col-12" id="input-motivo" name="motivo" placeholder="Qual o motivo da denuncia?"required></textarea>
         <br>
-        <a href="envio.php"><button type="submit" name="submit" value="Send" class="custom-btn btn-enviar"><b>Enviar</b></button></a>
+        <a href="envio.php"><button type="submit" name="submit" value="Send" id="button-denuncia">Enviar</button></a>
       </form>
     </div>
     <div class="github-apoie col-12"></div>

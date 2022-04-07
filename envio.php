@@ -120,7 +120,7 @@ try {
         <input class="col-sm-7 col-md-7 col-lg-7 col-12" type="text" name="input-denuncia" id="input-principal" placeholder="Digite o @..." required><br>
         <textarea class="col-sm-7 col-md-7 col-lg-7 col-12" id="input-motivo" name="motivo" placeholder="Qual o motivo da denuncia?"required></textarea>
         <br>
-        <a href="envio.php"><button type="submit" name="submit" value="Send" class="custom-btn btn-enviar"><b>Enviar</b></button></a>
+        <a href="envio.php"><button type="submit" name="submit" value="Send" id="button-denuncia">Enviar</button></a>
       </form>
     </div>
     <div class="github-apoie col-12"></div>

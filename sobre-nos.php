@@ -76,7 +76,7 @@
           <div class="card-body">
             <i class="fas fa-users fa-3x"></i>
             <h5 class="card-title">Nossa Comunidade</h5>
-            <p class="card-text">Nós possuimos uma grande comunidade de denunciadores anonimos que ajudarão você a denunciar o úsuario escolhido, assim, aumentando o alcance de denuncias sobre perfil.</p>
+            <p class="card-text">Nós possuimos uma grande comunidade de denunciadores anônimos que ajudarão você a denunciar o úsuario escolhido, assim, aumentando o alcance de denuncias sobre perfil.</p>
           </div>
         </div>
       </div>
@@ -85,7 +85,7 @@
           <div class="card-body">
             <i class="fas fa-user-minus fa-3x"></i>
             <h5 class="card-title">Nossa Métodologia</h5>
-            <p class="card-text">Nós analisamos o perfil do denunciado, caso tenha algum contéudo pornografico infantil, cerca de 10 a 50 denunciadores irão reportar o usuario para o Twitter, assim, apagando o post ou excluido a conta do alvo.</p>
+            <p class="card-text">Nós analisamos o perfil do usuário denunciado, caso tenha algum contéudo pornografico infantil, cerca de 10 a 50 denunciadores irão reportar o caso para o Twitter, assim, apagando o post ou excluido a conta do alvo.</p>
           </div>
         </div>
       </div>

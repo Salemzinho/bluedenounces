@@ -244,3 +244,26 @@ body {
   -webkit-transform: scale(1);
   transform: scale(1);
 }
+
+
+
+
+#button-denuncia{
+    background-color: transparent;
+    border: #00a2e3 solid 2px;
+    border-radius: 4px;
+    color: white;
+    width: 300px;
+    padding: 8px;
+    margin-top: 10px;
+    -webkit-transition: .3s;
+}
+
+#button-denuncia:hover{
+    background-color: #00a2e3;
+    transition: .3s
+}
+
+
+
+

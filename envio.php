@@ -24,7 +24,7 @@ try {
 	$mail->Host = 'smtp.gmail.com';
 	$mail->SMTPAuth = true;
 	$mail->Username = ''; //GMAIL PESSOAL
-	$mail->Password = '24032002';
+	$mail->Password = ''; //SENHA GMAIL PESSOAL
 	$mail->Port = 465;
  
 	$mail->setFrom(''); //GMAIL PESSOAL

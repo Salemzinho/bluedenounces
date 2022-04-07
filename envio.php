@@ -23,12 +23,12 @@ try {
 	$mail->isSMTP();
 	$mail->Host = 'smtp.gmail.com';
 	$mail->SMTPAuth = true;
-	$mail->Username = 'luancosta406@gmail.com';
+	$mail->Username = ''; //GMAIL PESSOAL
 	$mail->Password = '24032002';
 	$mail->Port = 465;
  
-	$mail->setFrom('luancosta406@gmail.com');
-	$mail->addAddress('luancosta406@gmail.com');
+	$mail->setFrom(''); //GMAIL PESSOAL
+	$mail->addAddress(''); //GMAIL PESSOAL
  
 	$mail->isHTML(true);
 	$mail->Subject = 'BlueDenounces';

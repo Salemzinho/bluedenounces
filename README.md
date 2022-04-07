@@ -1,13 +1,6 @@
 # bluedenounces
 
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-*{
-  font-family: 'Montserrat', sans-serif;
- }
-</style>
-
-<img src="img/Logo (fundo cinza).png" width="100%" height="400">
+<img src="img/Logo (fundo cinza).png" width="100%" height="">
 
 O Twitter é uma rede social que circula muitos conteúdos indesejáveis como Gore e Pornografia Infantil. Caso o usuário tente realizar uma denúncia na plataforma, o mesmo será obrigado a fornecer o próprio e-mail, o link do vídeo/foto e diversos outros dados, tornando o processo mais burocrático do que devia ser. Isto desencoraja os usuários a realizarem as denúncias.
 

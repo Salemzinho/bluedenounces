@@ -42,7 +42,7 @@ if (isset($_POST['submit'])) {
       <a class="navbar-brand me-2 mt-1" href="/">
         <h4 id="logo"><b id="logo-blue">Blue</b>Denounces</h4>
       </a> 
-      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar">
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbar">
           <i class="fas fa-bars"></i>
       </button>
       <div class="navbar-collapse collapse justify-content-end" id="navbar">
